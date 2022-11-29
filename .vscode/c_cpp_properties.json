@@ -1,28 +1,37 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
-            "defines": [],
-            "compilerPath": "/usr/bin/clang-7",
-            "cStandard": "c11",
-            "cppStandard": "c++14",
-            "intelliSenseMode": "linux-clang-x64"
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
         },
         {
             "name": "AVR",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/lib/avr/include"
+                "C:/avr-gcc-11.1.0-x64-windows/avr/include"
             ],
             "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
                 "__AVR_ATmega328P__"
             ],
-            "compilerPath": "/usr/bin/avr-gcc",
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/avr-gcc-11.1.0-x64-windows/bin/avr-gcc.exe",
             "cStandard": "c99",
-            "cppStandard": "c++14",
+            "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64",
             "configurationProvider": "ms-vscode.makefile-tools"
         }
